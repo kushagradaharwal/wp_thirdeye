@@ -18,3 +18,13 @@ Tags: kushagra
     position: relative;
     width: 29.4118%;
 }
+
+.wpcf7-submit{ color: #fff !important;
+  background-color: #E3E142 !important;
+  border-color: #E3E142 !important;padding-left: 0;
+    padding-right: 0;
+    width: 100%}
+.wpcf7-submit:hover{ background-color: #000 !important; }
+.foooterpart{ background:#404040; padding:30px;}
+.foooterpart p{ color: #f8f8f8;
+    font-size: 14px;}

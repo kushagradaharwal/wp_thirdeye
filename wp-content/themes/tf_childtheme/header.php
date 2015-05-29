@@ -347,7 +347,7 @@
 		<div class="container marginbot-50">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2">
-					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div data-wow-delay="0.4s" data-wow-offset="0" class="wow flipInY animated" style="visibility: visible;-webkit-animation-delay: 0.4s; -moz-animation-delay: 0.4s; animation-delay: 0.4s;">
 					<div class="section-heading text-center">
 					<h2 class="h-bold">Contact us</h2>
 					<div class="divider-header"></div>
@@ -359,78 +359,24 @@
 
 		</div>
 		
+		
 		<div class="container">
 
-			<div class="row marginbot-80">
-				<div class="col-md-8 col-md-offset-2">
-						<form id="contact-form" class="wow bounceInUp" data-wow-offset="10" data-wow-delay="0.2s">
-						<div class="row marginbot-20">
-							<div class="col-md-6 xs-marginbot-20">
-								<input type="text" class="form-control input-lg" id="name" placeholder="Enter name" required="required" />
-							</div>
-							<div class="col-md-6">
-								<input type="email" class="form-control input-lg" id="email" placeholder="Enter email" required="required" />
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-12">
-								<div class="form-group">
-										<input type="text" class="form-control input-lg" id="subject" placeholder="Subject" required="required" />
-								</div>
-								<div class="form-group">
-									<textarea name="message" id="message" class="form-control" rows="4" cols="25" required="required"
-										placeholder="Message"></textarea>
-								</div>						
-								<button type="submit" class="btn btn-skin btn-lg btn-block" id="btnContactUs">
-									Send Message</button>
-							</div>
-						</div>
-						</form>
-				</div>
-			</div>	
+		<div class="row marginbot-80">
+		<div class="col-md-8 col-md-offset-2">
+		<?php echo do_shortcode( '[contact-form-7 id="65" title="Home page contact us form"]' ); ?>
+		</div>
+		</div>
 
 
 		</div>
+
 	</section>
 	<!-- /Section: contact -->
 
 
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					
-					<div class="text-center">
-						<a href="#intro" class="totop"><i class="fa fa-angle-up fa-3x"></i></a>
-
-						<p>Valera, Inc. 795 Folsom Ave, Suite 600 San Francisco, CA 94107<br />
-						&copy;Copyright 2014 - Shuffle. Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
-					</div>
-				</div>
-			</div>	
-		</div>
-	</footer>
-
-    <!-- Core JavaScript Files -->
-    <script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.min.js"></script>	 
-    <script src="<?php echo  get_stylesheet_directory_uri();?>/js/bootstrap.min.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.sticky.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.flexslider-min.js"></script>
-    <script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.easing.min.js"></script>	
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.scrollTo.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.appear.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/stellar.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/wow.min.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/owl.carousel.min.js"></script>
-	<script src="<?php echo  get_stylesheet_directory_uri();?>/js/nivo-lightbox.min.js"></script>
-
-    <script src="<?php echo  get_stylesheet_directory_uri();?>/js/custom.js"></script>
-
-</body>
-
-</html>
-
-<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+	
+<?php /*<body id="page-top" data-spy="scroll" data-target=".navbar-custom">
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
@@ -457,3 +403,4 @@
 	</div><!-- .sidebar -->
 
 	<div id="content" class="site-content">
+	*/?>

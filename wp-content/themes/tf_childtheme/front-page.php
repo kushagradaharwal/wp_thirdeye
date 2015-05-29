@@ -1,26 +1,6 @@
 <?php get_header(); ?>
-<div id="foranuimate" style="width:10%">
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-</div>
-<script>
-jQuery(document).ready(function() {
-jQuery("#foranuimate").mouseenter(function(){
- jQuery("#foranuimate").animate({"width" : "100%"});
-});
-jQuery("#foranuimate").mouseleave(function(){
 
- jQuery("#foranuimate").animate({"width" : "10%"});
-
-});
-});
-</script>
-
-<?php
-
-?>
-	<div id="primary" class="content-area">
+	<?php /*<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -40,26 +20,26 @@ jQuery("#foranuimate").mouseleave(function(){
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 				 */
-				get_template_part( 'content', get_post_format() );
+				//get_template_part( 'content', get_post_format() );
 
 			// End the loop.
-			endwhile;
+			//endwhile;
 
 			// Previous/next page navigation.
-			the_posts_pagination( array(
-				'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
-				'next_text'          => __( 'Next page', 'twentyfifteen' ),
-				'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
-			) );
+			//the_posts_pagination( array(
+			//	'prev_text'          => __( 'Previous page', 'twentyfifteen' ),
+				//'next_text'          => __( 'Next page', 'twentyfifteen' ),
+				//'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyfifteen' ) . ' </span>',
+			//) );
 
 		// If no content, include the "No posts found" template.
-		else :
-			get_template_part( 'content', 'none' );
+		//else :
+			//get_template_part( 'content', 'none' );
 
-		endif;
+		//endif;
 		?>
 
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
+	<!--</main><!-- .site-main -->
+<!--	</div><!-- .content-area -->
 
 <?php get_footer(); ?>
