@@ -1,17 +1,18 @@
-    <section id="contact" class="home-section nopadd-bot color-dark bg-gray text-center">
-		<div class="foooterpart">
-		<div class="text-center">
+<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3">
+					
+					<div class="text-center">
 						<a href="#intro" class="totop"><i class="fa fa-angle-up fa-3x"></i></a>
 
 						<p>Valera, Inc. 795 Folsom Ave, Suite 600 San Francisco, CA 94107<br />
 						&copy;Copyright 2014 - Shuffle. Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
-	    </div>
-
-    </div>
-
-	</section>
-	
-	
+					</div>
+				</div>
+			</div>	
+		</div>
+	</footer>
 
     <!-- Core JavaScript Files -->
     <script src="<?php echo  get_stylesheet_directory_uri();?>/js/jquery.min.js"></script>	 

@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /wp/thirdeyedev/
+RewriteBase /wp/thirdeyedev/wp_thirdeye/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wp/thirdeyedev/index.php [L]
+RewriteRule . /wp/thirdeyedev/wp_thirdeye/index.php [L]
 </IfModule>
 
 # END WordPress

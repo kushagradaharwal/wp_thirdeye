@@ -1,0 +1,31 @@
+/*
+Theme Name: Tf Childtheme
+Author: kushagra
+Author URI: https://wordpress.org/kushagra
+Description: Ourkushagra
+Version: 1
+Template: twentyfifteen
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: kushagra
+*/
+@import url("../twentyfifteen/style.css");
+
+.sidebar {
+    float: right;
+    margin-right: -100%;
+    max-width: 413px;
+    position: relative;
+    width: 29.4118%;
+}
+
+.wpcf7-submit{ color: #fff !important;
+  background-color: #E3E142 !important;
+  border-color: #E3E142 !important;padding-left: 0;
+    padding-right: 0;
+    width: 100%}
+.wpcf7-submit:hover{ background-color: #000 !important; }
+.foooterpart{ background:#404040; padding:30px;}
+.foooterpart p{ color: #f8f8f8;
+    font-size: 14px;}
+.wpcf7-textarea{ display:block;}

@@ -1,0 +1,26 @@
+Changelog
+
+20 May 2015 - 1.07
+--------------------------------------
+- fixed employees carousel for larger screens;
+- fixed menu font type;
+
+14 May 2015 - 1.06
+--------------------------------------
+- added new options for the Page Builder;
+- fixed menu font size bug;
+- small CSS changes;
+- changed priority for Bootstrap;
+- changed $content_width;
+- added slider speed option.
+
+3 May 2015 - 1.05
+--------------------------------------
+- minor CSS fix.
+
+1 May 2015 - 1.04
+--------------------------------------
+- updated TGM Plugin Activation to the latest version;
+- social menu links now open in a new tab;
+- removed duplicate license info for imagesLoaded;
+- fixed issue in Safari.
