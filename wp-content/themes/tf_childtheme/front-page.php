@@ -80,70 +80,41 @@
 		<div class="container">
 
         <div class="row">
-            <div class="col-xs-6 col-sm-3 col-md-3">
+		<?php 
+$post_data = query_posts( 'cat=25' );
+//echo '<pre>';
+$post_dataitem = array_reverse($post_data);
+
+//array_reverse($post_data); 
+foreach($post_dataitem as $post_data1)
+{
+
+?>
+
+<div class="col-xs-6 col-sm-3 col-md-3">
+			
 				<div class="wow fadeInLeft" data-wow-delay="0.2s">
                 <div class="service-box">
 					<div class="service-icon">
-						<span class="fa fa-cogs fa-5x"></span> 
+					   <span class="fa <?php echo  get_post_meta( $post_data1->ID, 'service-icon-icons', true);?> fa-5x"></span> 
 					</div>
 					<div class="service-desc">						
-						<h5>Web Design</h5>
+						<h5><?php echo  $post_data1->post_title;?></h5>
 						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
+						<?php $content = $post_data1->post_content;
+						echo substr($content, 0, 100);
+						?>
 						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
+						<a href="<?php echo get_permalink($post_data1->ID); ?>" class="btn btn-skin">Learn more</a>
 					</div>
                 </div>
 				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-camera fa-5x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Photography</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInUp" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-laptop fa-5x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Graphic design</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
-			<div class="col-xs-6 col-sm-3 col-md-3">
-				<div class="wow fadeInRight" data-wow-delay="0.2s">
-                <div class="service-box">
-					<div class="service-icon">
-						<span class="fa fa-mobile-phone fa-5x"></span> 
-					</div>
-					<div class="service-desc">
-						<h5>Mobile apps</h5>
-						<p>
-						Ad denique euripidis signiferumque vim, iusto admodum quo cu. No tritani neglegentur mediocritatem duo.
-						</p>
-						<a href="#" class="btn btn-skin">Learn more</a>
-					</div>
-                </div>
-				</div>
-            </div>
+</div>
+ 
+<?php }
+?>
+
+            
         </div>		
 		</div>
 		</div>
@@ -167,21 +138,27 @@
 			</div>
 
 		</div>
-
-		<div class="container">
+	<div class="container">
 			<div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12" >
 					<div class="wow bounceInUp" data-wow-delay="0.4s">
                     <div id="owl-works" class="owl-carousel">
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/1@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/1.jpg" class="img-responsive" alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/2@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/2.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/3@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/3.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/4@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/4.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/5@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/5.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/6@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/6.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/7@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/7.jpg" class="img-responsive " alt="img"></a></div>
-                        <div class="item"><a href="<?php echo  get_stylesheet_directory_uri();?>/img/works/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  get_stylesheet_directory_uri();?>/img/works/8@2x.jpg"><img src="<?php echo  get_stylesheet_directory_uri();?>/img/works/8.jpg" class="img-responsive " alt="img"></a></div>
-                    </div>
+					<?php
+
+						$post_data = query_posts( 'cat=26' );
+						foreach($post_data as $post_data1) {
+						
+						$post_thumbnail_id  = get_post_thumbnail_id($post_data1->ID);
+						$post_thumbnail_url = wp_get_attachment_url( $post_thumbnail_id );
+						?>
+		
+						<div class="item">
+						<a href="<?php echo  $post_thumbnail_url;?>" title="<?php echo  $post_data1->title;?>" data-lightbox-gallery="gallery1" data-lightbox-hidpi="<?php echo  $post_thumbnail_url;?>">
+						<img src="<?php echo  $post_thumbnail_url;?>" class="img-responsive" alt="img"></a>
+						
+						</div>
+						<?php } ?>  
+						</div>
 					</div>
                 </div>
             </div>

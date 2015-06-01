@@ -11,8 +11,29 @@ function dev_common_widget()
         'after_title' => '</span></h3>'
     ));
 
+	
+
 }
 add_action('widgets_init','dev_common_widget');
+
+
+function dev_footer_widget()
+{
+ register_sidebar(array(
+        'name' => esc_attr__( 'Footer Widgets', 'devfooter'),
+        'id' => 'devfooter',
+        'description' => esc_attr__( 'Footer widget area', 'devfooter'),
+        'before_widget' => '<section class="widget">',
+        'after_widget' => '</section>',
+        'before_title' => '<h3><span>',
+        'after_title' => '</span></h3>'
+    ));
+
+	
+
+}
+add_action('widgets_init','dev_footer_widget');
+
 
 add_action( 'wp_head', 'my_actionhook_example');
 function my_actionhook_example() 
@@ -33,3 +54,7 @@ function mytest_add_sitename_to_title( $title)
 		return $title;
 }
 
+
+
+
+add_theme_support( 'post-thumbnails' ); 

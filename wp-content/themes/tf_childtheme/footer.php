@@ -1,5 +1,13 @@
+
+	<?php wp_footer(); ?>
+
 <footer>
-		<div class="container">
+		<div class="container"><div class="col-xs-12 col-sm-12 col-md-12">
+		<?php dynamic_sidebar("devfooter") ;?>	
+		</div>
+		<div class="row">
+		
+		</div>
 			<div class="row">
 				<div class="col-md-6 col-md-offset-3">
 					
