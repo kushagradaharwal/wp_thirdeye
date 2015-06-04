@@ -771,7 +771,7 @@ footer {
 }
 
 footer {
-	text-align: center;
+/*	text-align: center;*/
 	padding: 50px 0 ;
 	
 }
@@ -1027,7 +1027,7 @@ a.btn:focus{
 	}
 }
 
-.widget{ float:left; width:25%;}
+.widget{ float:left;}
 
 @media (max-width:667px)
 {
@@ -1041,25 +1041,14 @@ a.btn:focus{
 	
 ul.menu li:before {
     color: #c8c8c8;
-    content: "\f030";
 }
 
 
-
-ul.menu li:before {
-    color: rgba(255, 255, 255, 0.15);
-    content: "\f030";
-    display: block;
-    font-family: "fontawesome";
-    font-size: 15px 
-    position: absolute; padding-left: 65px  !important;
-}
 
 
 
 ul.menu li a {
     color: #fff;
-    padding-left: 87px !important;
 }
 
 ul.menu li:hover a   {
@@ -1071,32 +1060,22 @@ ul.menu {
     margin: 0;
     padding: 0;
 }
-.textwidget{ text-align:justify; color:#fff;}
+.textwidget{color:#fff;}
 
 .widget ul li:before {
     color: #c8c8c8;
-    content: "\f030";
 }
 
 
-
-.widget  ul li:before {
-    color: rgba(255, 255, 255, 0.15);
-    content: "\f030";
-    display: block;
-    font-family: "fontawesome";
-    font-size: 15px;
-    position: absolute; padding-left: 110px;
-}
 
 
 
 .widget  ul li a {
-    color: #fff;   padding-left: 24px;
+    color: #fff; 
 }
 
 .widget  ul li:hover a   {
-    color: #e3e142;
+    color: #e3e142;padding-left:7px;
 }
 
 .widget  ul {
@@ -1105,4 +1084,4 @@ ul.menu {
     padding: 0;
 }
 
-.textwidget .highlight{ margin-bottom:0px !important; padding-left:84px;}
+.textwidget .highlight{ margin-bottom:0px !important;}

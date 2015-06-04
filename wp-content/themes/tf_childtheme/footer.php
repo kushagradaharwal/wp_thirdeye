@@ -2,8 +2,11 @@
 	<?php wp_footer(); ?>
 
 <footer>
-		<div class="container"><div class="col-xs-12 col-sm-12 col-md-12">
-		<?php dynamic_sidebar("devfooter") ;?>	
+		<div class="container">
+		<div class="col-xs-12 col-sm-12 col-md-12">
+		<div class="row">
+		<?php dynamic_sidebar("devfooter") ;?>
+       </div>		
 		</div>
 		<div class="row">
 		

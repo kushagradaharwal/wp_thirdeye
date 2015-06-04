@@ -23,7 +23,7 @@ function dev_footer_widget()
         'name' => esc_attr__( 'Footer Widgets', 'devfooter'),
         'id' => 'devfooter',
         'description' => esc_attr__( 'Footer widget area', 'devfooter'),
-        'before_widget' => '<section class="widget">',
+        'before_widget' => '<section class="widget col-sm-3">',
         'after_widget' => '</section>',
         'before_title' => '<h3><span>',
         'after_title' => '</span></h3>'
