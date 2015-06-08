@@ -18,7 +18,7 @@
 						<a href="#intro" class="totop"><i class="fa fa-angle-up fa-3x"></i></a>
 
 						<p>Valera, Inc. 795 Folsom Ave, Suite 600 San Francisco, CA 94107<br />
-						&copy;Copyright 2014 - Shuffle. Designed by <a href="http://bootstraptaste.com">Bootstraptaste</a></p>
+						&copy;Copyright 2014</p>
 					</div>
 				</div>
 			</div>	

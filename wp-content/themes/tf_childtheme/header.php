@@ -17,6 +17,20 @@
 	<script src="<?php echo esc_url( get_template_directory_uri() ); ?>/js/html5.js"></script>
 	<![endif]-->
 	<?php wp_head(); ?>
+	
+	<title>
+	<?php if(is_front_page())
+	{ 
+	echo bloginfo("name"); 
+	} 
+	else 
+	{ 
+	echo wp_title(" | ", false, right);
+	echo bloginfo("name");
+	}
+	?>
+	</title>
+
 	<link href="<?php echo  get_stylesheet_directory_uri();?>/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     <link href="<?php echo  get_stylesheet_directory_uri() ;?>/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 	<link href="<?php echo  get_stylesheet_directory_uri() ;?>/css/nivo-lightbox.css" rel="stylesheet" />
