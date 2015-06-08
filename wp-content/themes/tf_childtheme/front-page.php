@@ -122,6 +122,199 @@ foreach($post_dataitem as $post_data1)
 	<!-- /Section: services -->
 	
 
+	
+	<!-- Section: services -->
+    <section id="service1" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Services1</h2>
+					<div class="divider-header"></div>
+					<p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+
+        <div class="row">
+		<?php 
+$post_data = query_posts( 'cat=25' );
+//echo '<pre>';
+$post_dataitem = array_reverse($post_data);
+
+//array_reverse($post_data); 
+foreach($post_dataitem as $post_data1)
+{
+
+?>
+
+<div class="col-xs-6 col-sm-3 col-md-3">
+			
+				<div class="wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="service-icon">
+					   <span class="fa <?php echo  get_post_meta( $post_data1->ID, 'service-icon-icons', true);?> fa-5x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5><?php echo  $post_data1->post_title;?></h5>
+						<p>
+						<?php $content = $post_data1->post_content;
+						echo substr($content, 0, 100);
+						?>
+						</p>
+						<a href="<?php echo get_permalink($post_data1->ID); ?>" class="btn btn-skin">Learn more</a>
+					</div>
+                </div>
+				</div>
+</div>
+ 
+<?php }
+?>
+
+            
+        </div>		
+		</div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+	
+	
+	
+	<!-- Section: services -->
+    <section id="service2" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Services2</h2>
+					<div class="divider-header"></div>
+					<p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+
+        <div class="row">
+		<?php 
+$post_data = query_posts( 'cat=25' );
+//echo '<pre>';
+$post_dataitem = array_reverse($post_data);
+
+//array_reverse($post_data); 
+foreach($post_dataitem as $post_data1)
+{
+
+?>
+
+<div class="col-xs-6 col-sm-3 col-md-3">
+			
+				<div class="wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="service-icon">
+					   <span class="fa <?php echo  get_post_meta( $post_data1->ID, 'service-icon-icons', true);?> fa-5x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5><?php echo  $post_data1->post_title;?></h5>
+						<p>
+						<?php $content = $post_data1->post_content;
+						echo substr($content, 0, 100);
+						?>
+						</p>
+						<a href="<?php echo get_permalink($post_data1->ID); ?>" class="btn btn-skin">Learn more</a>
+					</div>
+                </div>
+				</div>
+</div>
+ 
+<?php }
+?>
+
+            
+        </div>		
+		</div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+	
+	<!-- Section: services -->
+    <section id="service3" class="home-section color-dark bg-gray">
+		<div class="container marginbot-50">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<div class="wow flipInY" data-wow-offset="0" data-wow-delay="0.4s">
+					<div class="section-heading text-center">
+					<h2 class="h-bold">Services3</h2>
+					<div class="divider-header"></div>
+					<p>Lorem ipsum dolor sit amet, agam perfecto sensibus usu at duo ut iriure.</p>
+					</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="text-center">
+		<div class="container">
+
+        <div class="row">
+		<?php 
+$post_data = query_posts( 'cat=25' );
+//echo '<pre>';
+$post_dataitem = array_reverse($post_data);
+
+//array_reverse($post_data); 
+foreach($post_dataitem as $post_data1)
+{
+
+?>
+
+<div class="col-xs-6 col-sm-3 col-md-3">
+			
+				<div class="wow fadeInLeft" data-wow-delay="0.2s">
+                <div class="service-box">
+					<div class="service-icon">
+					   <span class="fa <?php echo  get_post_meta( $post_data1->ID, 'service-icon-icons', true);?> fa-5x"></span> 
+					</div>
+					<div class="service-desc">						
+						<h5><?php echo  $post_data1->post_title;?></h5>
+						<p>
+						<?php $content = $post_data1->post_content;
+						echo substr($content, 0, 100);
+						?>
+						</p>
+						<a href="<?php echo get_permalink($post_data1->ID); ?>" class="btn btn-skin">Learn more</a>
+					</div>
+                </div>
+				</div>
+</div>
+ 
+<?php }
+?>
+
+            
+        </div>		
+		</div>
+		</div>
+	</section>
+	<!-- /Section: services -->
+	
+	
+	
 	<!-- Section: works -->
     <section id="works" class="home-section color-dark text-center bg-white">
 		<div class="container marginbot-50">

@@ -143,10 +143,18 @@
                                                       <!-- Collect the nav links, forms, and other content for toggling -->
                                                       <div class="collapse navbar-collapse" id="menu">
                                                             <ul class="nav navbar-nav navbar-right">
-                                                                  <li class="active"><a href="<?php echo esc_url( home_url( '/' ) ); ?>#intro">Home</a></li>
-                                                                  <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#about">About Us</a></li>
-																   <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#service">Services</a></li>
-                                                                  <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#works">Works</a></li>				                                                                  
+                                                                  <li class="active"><a href="#intro">Home</a></li>
+                                                                  <li><a href="#about">About Us</a></li>
+																  <li><a href="#service">Services</a>
+																       <ul class="navlevel1">
+																	     <li><a class="service1"  href="#service1">service1</a></li>
+                                                                         <li><a class="service2"  href="#service2">service2</a></li>
+																		 <li><a class="service3"  href="#service3">service3</a></li>
+																	   </ul>
+																    
+																  </li>
+                                                                 <!-- <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#works">Works</a></li>-->
+                                                                  <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>#works">Works</a></li>																		  
                                                                   
                                                                   <li><a href="#contact">Contact</a></li>
                                                             </ul>

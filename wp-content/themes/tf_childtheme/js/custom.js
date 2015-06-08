@@ -87,6 +87,28 @@
 		errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
 	});
 	
+	jQuery('a.service1').click(function() {
+    jQuery('html, body').animate({ scrollTop:jQuery('#menu').offset().top - '80'}, 1000,
+      function() {
+        scrollingfn();
+      });
+    return false;
+  });
+
+  
+  jQuery('a.service2').click(function() {
+   jQuery('html, body').animate({ scrollTop:jQuery('#menu').offset().top - '80'}, 1000,
+      function() {
+        scrollingfn();
+      });
+    return false;
+  });
+
+  
+
+function scrollingfn() {
+  var scrollPosition = $(window).scrollTop();
+}
 
 	jQuery('.appear').appear();
 	jQuery(".appear").on("appear", function(data) {
