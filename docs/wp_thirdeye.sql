@@ -19,6 +19,7 @@ SET time_zone = "+00:00";
 --
 -- Database: `wp_thirdeye`
 --
+--
 CREATE DATABASE IF NOT EXISTS `wp_thirdeye` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
 USE `wp_thirdeye`;
 
